@@ -1,9 +1,9 @@
-// import Script from 'next/experimental-script'
+// you can add icons to a library for global use, in this limited case, i am not
+// import { library } from '@fortawesome/fontawesome-svg-core' 
 import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core'
 
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faGitAlt } from '@fortawesome/free-brands-svg-icons';
 
 import { useState, useEffect } from 'react'
 const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');

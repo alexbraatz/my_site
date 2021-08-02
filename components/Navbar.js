@@ -4,6 +4,9 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import {Spin as Hamburger} from 'hamburger-react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faJedi } from '@fortawesome/free-solid-svg-icons';
+
 export const Navbar = () => {
   const [active, setActive ] = useState(false);
 
@@ -17,8 +20,8 @@ export const Navbar = () => {
         <Link href='/'>
         <a className='inline-flex items-center p-2 mr-4'>
         
-          {/* <Image src="/vercel.svg" width={72} height={16}></Image> */}
-          <span className='text-xl text-white font-bold lowercase tracking-wide pl-12'>Alexx Braatz</span>
+          <FontAwesomeIcon icon={faJedi} style={{width: '60px'}} className="pl-6"/>
+          <span className='text-xl text-white font-bold lowercase tracking-wide pl-2'>Alexx Braatz</span>
           
 
         </a>
