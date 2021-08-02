@@ -38,8 +38,12 @@ export const Contact = () => {
   }, [])
 
   const styles = {
-    height: 400, 
-    width: 400
+    height: 200, 
+    width: 200
+  }
+
+  const iconStyles = {
+    width: '120px'
   }
 
   const mapSize = () => {
@@ -47,6 +51,10 @@ export const Contact = () => {
       styles = { 
         height: 10, 
         width: 10}
+
+      iconStyles = {
+        width: '20px'
+      }
     }
   }
 
@@ -68,14 +76,14 @@ export const Contact = () => {
 
         <div className="pl-24 ml-8">
           <a href="https://github.com/alexbraatz" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} style={{width: '120px'}}/>
+            <FontAwesomeIcon icon={faGithub} style={iconStyles}/>
           </a>
         </div>
 
         <div className="pl-24 ml-8">
           {/* target attr opens a new tab and rel attr prevents a phishing type known as tabnabbing */}
           <a href="https://www.linkedin.com/in/alexjbraatz/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} style={{width: '120px'}} />
+            <FontAwesomeIcon icon={faLinkedin} style={iconStyles} />
           </a>
         </div>
       
