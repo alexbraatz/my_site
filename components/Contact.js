@@ -1,5 +1,10 @@
 // import Script from 'next/experimental-script'
 import Head from 'next/head'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 import { useState, useEffect } from 'react'
 const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
@@ -35,9 +40,6 @@ export const Contact = () => {
       <Head>
         <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
       </Head>
-      <>
-        {/* <Script src="https://kit.fontawesome.com/d15b84a4d3.js" crossorigin="anonymous"></Script> */}
-      </>
 
       <h2 className="pl-7 font-sans font-extrabold text-4xl md:text-7xl ubpixel-antialiased text-black">
         contact
@@ -50,11 +52,11 @@ export const Contact = () => {
       <div className="fa-6x">
         {/* target attr opens a new tab and rel attr prevents a phishing type known as tabnabbing */}
         <a href="https://www.linkedin.com/in/alexjbraatz/" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-solid fa-linkedin"></i>
+          <FontAwesomeIcon icon={faLinkedin} style={{width: '120px'}} />
         </a>
 
         <a href="https://github.com/alexbraatz" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github"></i>
+          <FontAwesomeIcon icon={faGithub} style={{width: '120px'}}/>
         </a>
       </div>
 
