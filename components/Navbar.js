@@ -18,7 +18,7 @@ export const Navbar = () => {
         <a className='inline-flex items-center p-2 mr-4'>
         
           {/* <Image src="/vercel.svg" width={72} height={16}></Image> */}
-          <span className='text-xl text-white font-bold lowercase tracking-wide pl-2'>Alexx Braatz</span>
+          <span className='text-xl text-white font-bold lowercase tracking-wide pl-12'>Alexx Braatz</span>
           
 
         </a>
