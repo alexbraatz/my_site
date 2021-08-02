@@ -12,6 +12,9 @@ const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 export const Contact = () => {
   const [ pageIsMounted, setPageIsMounted ] = useState(false);
   const [ Map, setMap ] = useState();
+  let [ pageIsMobile, setPageIsMobile ] = useState(false)
+  let [ mapStyles, setMapStyles ] = useState({height: '400px', width: '400px'})
+  let [ iconStyles, setIconStyles ] = useState({width: '100px'})
 
   mapboxgl.accessToken = "pk.eyJ1IjoiYWxleHhicmFhdHoiLCJhIjoiY2tyY2lnemQxNTNicDJucnU4aGF0NjIzdSJ9.AO8k4xOqjI8a2v1eUmWRKQ"
 
@@ -35,29 +38,41 @@ export const Contact = () => {
           trackUserLocation: true,
         })
       );
+      
+    setPageIsMobile(isMobile);
+
+    if ( pageIsMobile ) {
+      setMapStyles({height: '100px', width: '100px'})
+      setIconStyles({width: '20px'})
+    }
   }, [])
 
-  let mapStyles = {
-    height: '400px', 
-    width: '400px'
-  }
+  // const mapSize = () => {
+  //   if( isMobile ){
+      
+  //   }
+  // }
 
-  let iconStyles = {
-    width: '80px'
-  }
+  // const mapSize = () => {
+  //   if ( isMobile ){
+  //     mapStyles = { 
+  //       height: '200px', 
+  //       width: '200px'
+  //     }
 
-  const mapSize = () => {
-    if ( isMobile ){
-      mapStyles = { 
-        height: '200px', 
-        width: '200px'
-      }
-
-      iconStyles = {
-        width: '20px'
-      }
-    }
-  }
+  //     iconStyles = {
+  //       width: '80px'
+  //     }
+  //   } else {
+  //     mapStyles = {
+  //       height: '400px', 
+  //       width: '400px'
+  //     },
+  //     iconStyles = {
+  //       width: '140px'
+  //     }
+  //   }
+  // }
 
   return (
 
