@@ -13,8 +13,8 @@ export const Contact = () => {
   const [ pageIsMounted, setPageIsMounted ] = useState(false);
   const [ Map, setMap ] = useState();
   let [ pageIsMobile, setPageIsMobile ] = useState(false)
-  let [ mapStyles, setMapStyles ] = useState({height: '400px', width: '400px'})
-  let [ iconStyles, setIconStyles ] = useState({width: '100px'})
+  let [ mapStyles, setMapStyles ] = useState({height: '225px', width: '225px'})
+  let [ iconStyles, setIconStyles ] = useState({width: '80px'})
 
   mapboxgl.accessToken = "pk.eyJ1IjoiYWxleHhicmFhdHoiLCJhIjoiY2tyY2lnemQxNTNicDJucnU4aGF0NjIzdSJ9.AO8k4xOqjI8a2v1eUmWRKQ"
 
@@ -39,20 +39,19 @@ export const Contact = () => {
         })
       );
       
-    setPageIsMobile(isMobile);
+    
 
-    if ( pageIsMobile ) {
-      setMapStyles({height: '100px', width: '100px'})
-      setIconStyles({width: '20px'})
-    }
   }, [])
 
   // const mapSize = () => {
-  //   if( isMobile ){
-      
+  //   setPageIsMobile(isMobile);
+  //   if ( pageIsMobile ) {
+  //     setMapStyles({height: '100px', width: '100px'})
+  //     setIconStyles({width: '20px'})
   //   }
   // }
 
+  // mapSize();
   // const mapSize = () => {
   //   if ( isMobile ){
   //     mapStyles = { 
