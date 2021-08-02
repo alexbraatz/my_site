@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export const Welcome = () => {
 
   return (
-    <section className="w-full h-screen bg-gradient-to-r from-pink-600 to-purple-500">
+    <section className="w-scren h-screen bg-gradient-to-r from-pink-600 to-purple-500">
 
       {/* <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
       <h1 className="pl-7 font-sans font-extrabold text-9xl ubpixel-antialiased text-black"><Example />hi, i'm alex, full stack developer</h1>
