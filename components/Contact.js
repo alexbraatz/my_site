@@ -37,20 +37,20 @@ export const Contact = () => {
       );
   }, [])
 
-  const styles = {
-    height: 200, 
-    width: 200
+  const mapStyles = {
+    height: '400px', 
+    width: '400px'
   }
 
   const iconStyles = {
-    width: '120px'
+    width: '80px'
   }
 
   const mapSize = () => {
     if ( isMobile ){
-      styles = { 
-        height: 10, 
-        width: 10}
+      mapStyles = { 
+        height: '200px', 
+        width: '200px'}
 
       iconStyles = {
         width: '20px'
@@ -69,18 +69,18 @@ export const Contact = () => {
         contact
       </h2>
 
-      <h6 className="pl-9 pt-2 font-sans font-extrabold">currently located in:</h6>
-      <div className="px-40 py-8 grid grid-rows-3 grid-flow-col place-content-start"> 
+      <h6 className="pl-7 font-sans font-extrabold">you can find me in:</h6>
+      <div className="px-20 md:px40 py-8 grid grid-rows-2 grid-flow-col place-content-start"> 
         
-        <div className="ml-2 shadow-2xl sm:w-5 rounded-lg col-span-1 row-span-3" id='my-map' style={styles}></div>
+        <div className="ml-2 shadow-2xl rounded-lg col-span-2 md:row-span-3" id='my-map' style={mapStyles}></div>
 
-        <div className="pl-24 ml-8">
+        <div className="grid-rows-2">
           <a href="https://github.com/alexbraatz" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} style={iconStyles}/>
           </a>
         </div>
 
-        <div className="pl-24 ml-8">
+        <div className="grid-rows-2">
           {/* target attr opens a new tab and rel attr prevents a phishing type known as tabnabbing */}
           <a href="https://www.linkedin.com/in/alexjbraatz/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} style={iconStyles} />
