@@ -37,12 +37,12 @@ export const Contact = () => {
       );
   }, [])
 
-  const mapStyles = {
+  let mapStyles = {
     height: '400px', 
     width: '400px'
   }
 
-  const iconStyles = {
+  let iconStyles = {
     width: '80px'
   }
 
@@ -50,7 +50,8 @@ export const Contact = () => {
     if ( isMobile ){
       mapStyles = { 
         height: '200px', 
-        width: '200px'}
+        width: '200px'
+      }
 
       iconStyles = {
         width: '20px'
