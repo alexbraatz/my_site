@@ -3,7 +3,7 @@
 import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faLinkedin, faGithub, faGitAlt } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import { useState, useEffect } from 'react'
 const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
@@ -45,19 +45,24 @@ export const Contact = () => {
         contact
       </h2>
 
-      <div id='my-map' style={{ height: 500, width: 500 }}>
+      <div className="pt-6 grid grid-rows-3 grid-flow-col place-content-start"> 
 
-      </div>
+        <div className="ml-2 shadow-2xl rounded-lg col-span-1 row-span-3" id='my-map' style={{ height: 500, width: 500 }}></div>
 
-      <div className="fa-6x">
-        {/* target attr opens a new tab and rel attr prevents a phishing type known as tabnabbing */}
-        <a href="https://www.linkedin.com/in/alexjbraatz/" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} style={{width: '120px'}} />
-        </a>
-
-        <a href="https://github.com/alexbraatz" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} style={{width: '120px'}}/>
-        </a>
+        <div className="ml-8">
+          {/* target attr opens a new tab and rel attr prevents a phishing type known as tabnabbing */}
+          <a href="https://www.linkedin.com/in/alexjbraatz/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} style={{width: '120px'}} />
+          </a>
+        </div>
+        
+        <div className="ml-8">
+          <a href="https://github.com/alexbraatz" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} style={{width: '120px'}}/>
+          </a>
+        </div>
+        
+      
       </div>
 
     </section>
