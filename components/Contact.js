@@ -45,8 +45,8 @@ export const Contact = () => {
   const mapSize = () => {
     if ( isMobile ){
       styles = { 
-        height: 50, 
-        width: 50}
+        height: 10, 
+        width: 10}
     }
   }
 
