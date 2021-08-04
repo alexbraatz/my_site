@@ -20,42 +20,48 @@ export const Work = () => {
       <h2 className="pl-7 font-sans font-extrabold text-4xl md:text-7xl ubpixel-antialiased text-black">
         projects i've worked on
       </h2>
+    
+      <div >
+        
+        <div className="mx-24 w-36 h-36">
+          <AnimatePresence initial={false} custom={direction}>
+            <motion.img 
+              key={page}
+              src={images[imageIndex]}
+              custom={direction}
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              exit="exit"
+              transition={{x: {type: 'spring', stiffness: 300, damping: 300, }, opacity: {duration: 1}}}
+              drag="x"
+              dragConstraints={{left: 0, right: 0}}
+              dragElastic={1} 
+            />
+          </AnimatePresence>
+        </div>
+
+        <div className="relative h-32 w-32">
+          <motion.button
+            whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
+            whileTap={{scale: 0.9}}
+            className="absolute bottom-0 right-0 h-16 w-16"
+            onClick={() => paginate(1)}
+          >
+            <FontAwesomeIcon icon={faArrowRight} style={{width: '20px'}}/>
+          </motion.button>
+        </div>
       
-      <div>
-        <AnimatePresence initial={false} custom={direction}>
-
-          <motion.img 
-            key={page}
-            src={images[imageIndex]}
-            custom={direction}
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            exit={{opacity:0}}
-            transition={{x: {type: 'spring', stiffness: 300, damping: 300, }, opacity: {duration: 1}}}
-            drag="x"
-            dragConstraints={{left: 0, right: 0}}
-            dragElastic={1} 
-          />
-
-        </AnimatePresence>
         <motion.button
-        whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
-        whileTap={{scale: 0.9}}
-        className="next"
-        onClick={() => paginate(1)}
+          whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
+          whileTap={{scale: 0.9}}
+          className=""
+          onClick={() => paginate(-1)}
         >
-          <FontAwesomeIcon icon={faArrowRight} size="2x" />
+          <FontAwesomeIcon icon={faArrowLeft} style={{width: '20px'}}/>
         </motion.button>
-
-        <motion.button
-        whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
-        whileTap={{scale: 0.9}}
-        className="next"
-        onClick={() => paginate(-1)}
-        >
-          <FontAwesomeIcon icon={faArrowLeft} size="2x" />
-        </motion.button>
+       
       </div>
+      
     </section>
   )
 
