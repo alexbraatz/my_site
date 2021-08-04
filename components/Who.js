@@ -1,31 +1,29 @@
 export const Who = () => {
 
   return (
-    <section className="pt-24 w-full h-screen bg-gradient-to-r from-pink-600 to-purple-500">
+    <section className="pt-8 w-full h-screen bg-gradient-to-r from-pink-600 to-purple-500">
       {/* <div className="relative h-32 w-32"> */}
         <div className="float-left">
-          <h2 className="decoration-clone pl-2 font-sans font-extrabold text-4xl ubpixel-antialiased text-black">
+          <h2 className="decoration-clone m-3 font-sans font-extrabold text-4xl ubpixel-antialiased text-black">
             me,<br/>myself,<br/>and i
             </h2>
         </div>
         <div className="">
-          <p className="">i'm alex braatz, your friendly neighborhood developer. from my first 'hello world' in python in spring of 2020, 
-             it was like being struck by lightning. my passion has always been to help people. 
-             now, i can build the tools of tomorrow to impact, improve, and help the lives of as many people as i can.
+          <p className="pl-2 font-light tracking-widest leading-loose">Hi, I'm Alex Braatz, your friendly neighborhood developer. From my first 'Hello World'
+             during spring of 2020, it was like being struck by lightning. A lover of humanity, I'm passionate about 
+             building the tools of the future to help humans be more productive, live more meaningful, and have more life.
           </p>
         </div>
-        <div className="">
-          <p className="">since then, i began my path to coding mastery by learning 'Ruby the Hard Way'. after learning some time on my own,
-             i attended a full stack immersive experience at Prime Digital Academy gaining a solid understanding of 
-             modern web architect and accelerating my technical skills. now, i have proficieny in: 
-             javascript, react, node.js, and postgresql. additionally, with self-taught experience in ruby, python, php,
-             and contemporary frameworks like next.js
+        <div className=""><br/>
+          <p className="pl-2 font-light tracking-widest leading-loose">
+             Since, I've been on my path to coding mastery starting with 'Learn Ruby the Hard Way'. Along the way, I've 
+             built proficieny in: JavaScript, React, Node.js, Ruby, and PostgreSQL with experience in Python, PHP,
+             and contemporary frameworks like Next.js.
           </p>
         </div>
-        <div className="">
-          <p className="">i currently reside in minneapolis, minnesota with my partner samantha, 
-            husky puppy zelda, our bengal-mix kitty nooriya, and gray tabby-cat nala. in my free time i like spending time outside with
-            our dog, going on hikes (huge fan of yellowstone), video games, anime, netflix and of course, coding
+        <div className=""><br/>
+          <p className="pl-2 font-light tracking-widest leading-loose">In my free time I like spending time outside with my dog Zelda,
+            adventuring on hikes, video games, anime, netflix and, of course, the magic of coding.
           </p>
         </div>
       {/* </div> */}
