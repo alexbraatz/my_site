@@ -20,7 +20,7 @@ export const Navbar = () => {
         <Link href='/'>
         <a className='inline-flex items-center p-2 mr-4'>
         
-          <FontAwesomeIcon icon={faJedi} style={{width: '60px'}} className="pl-6"/>
+          <FontAwesomeIcon icon={faJedi} style={{width: '48px'}} className="pl-6"/>
           <span className='text-xl text-white font-bold lowercase tracking-wide pl-2'>Alexx Braatz</span>
           
 
