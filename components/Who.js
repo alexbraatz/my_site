@@ -23,7 +23,7 @@ export const Who = () => {
         </div>
         <div className=""><br/>
           <p className="pl-2 font-light tracking-widest leading-loose">In my free time I like spending time outside with my dog Zelda,
-            adventuring on hikes, video games, anime, netflix and, of course, the magic of coding.
+            adventuring on hikes, video games, anime, netflix, and, of course, practicing the magic of coding.
           </p>
         </div>
       {/* </div> */}
