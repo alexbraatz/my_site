@@ -20,7 +20,7 @@ export const Work = () => {
         projects i've worked on
       </h2>
         
-        {/* <div className="h-48 w-48 mx-20 pt-12"> */}
+        <div className="pl-4">
           <AnimatePresence initial={false} custom={direction}>
             <motion.img 
               key={page}
@@ -37,9 +37,9 @@ export const Work = () => {
               dragElastic={1} 
             />
           </AnimatePresence>
-        {/* </div> */}
+        </div>
 
-        {/* <div className="mx-8 my-16 space-x-56"> */}
+        <div className="pl-4">
           <motion.button
             whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
             whileTap={{scale: 0.9}}
@@ -55,7 +55,7 @@ export const Work = () => {
           >
             <FontAwesomeIcon icon={faArrowRight} style={{width: '28px'}} className="mx-20"/>
           </motion.button>
-        {/* </div> */}
+        </div>
       
     </section>
   )
