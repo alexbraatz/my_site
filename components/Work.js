@@ -20,10 +20,8 @@ export const Work = () => {
       <h2 className="pl-7 font-sans font-extrabold text-4xl md:text-7xl ubpixel-antialiased text-black">
         projects i've worked on
       </h2>
-    
-      <div className="">
         
-        <div className="h-48 w-48 mx-20 pt-4">
+        <div className="h-48 w-48 mx-20 pr-2 pt-12">
           <AnimatePresence initial={false} custom={direction}>
             <motion.img 
               key={page}
@@ -40,27 +38,23 @@ export const Work = () => {
           </AnimatePresence>
         </div>
 
-        <div className="ml-80">
-          <motion.button
-            whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
-            whileTap={{scale: 0.9}}
-            onClick={() => paginate(+1)}
-          >
-            <FontAwesomeIcon icon={faArrowRight} style={{width: '20px'}} className=""/>
-          </motion.button>
-        </div>
-
-        <div className="pl-6">
+        <div className="mx-8 space-x-56">
           <motion.button
             whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
             whileTap={{scale: 0.9}}
             onClick={() => paginate(-1)}
           >
-            <FontAwesomeIcon icon={faArrowLeft} style={{width: '20px'}} className=""/>
+            <FontAwesomeIcon icon={faArrowLeft} style={{width: '28px'}} className=""/>
+          </motion.button>
+   
+          <motion.button
+            whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
+            whileTap={{scale: 0.9}}
+            onClick={() => paginate(+1)}
+          >
+            <FontAwesomeIcon icon={faArrowRight} style={{width: '28px'}} className=""/>
           </motion.button>
         </div>
-       
-      </div>
       
     </section>
   )
