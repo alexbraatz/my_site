@@ -75,7 +75,7 @@ export const Contact = () => {
 
   return (
 
-    <section className="pt-24 w-screen h-auto bg-gradient-to-r from-pink-600 to-purple-500">
+    <section className="pt-60 w-screen h-auto bg-gradient-to-r from-pink-600 to-purple-500">
       <Head>
         <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
       </Head>
