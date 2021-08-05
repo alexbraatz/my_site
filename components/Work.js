@@ -1,14 +1,18 @@
 import React, {useState} from 'react'
-import {images} from '../images'
+// import {images} from '../images'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { wrap } from '@popmotion/popcorn'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
+import {pg1} from '../public/images/pg1.png'
+import {pg2} from '../public/images/pg2.png'
+import {pg3} from '../public/images/pg3.png'
 
 export const Work = () => {
   const [[page, direction], setPage] = useState([0,0])
-
+  const images = [pg1, pg2, pg3]
   const imageIndex = wrap(0, images.length, page)
 
   const paginate = newDirection => {
@@ -16,12 +20,13 @@ export const Work = () => {
   }
 
   return (
-    <section className="pt-4 w-full h-full bg-gradient-to-r from-pink-600 to-purple-500">
-      <h2 className="pl-7 font-sans font-extrabold text-4xl md:text-7xl ubpixel-antialiased text-black">
+    <section className="w-full h-full bg-gradient-to-r from-pink-600 to-purple-500">
+      <h2 className="pl-7 pt-2 font-sans font-extrabold text-4xl md:text-7xl ubpixel-antialiased text-black">
         projects i've worked on
       </h2>
         
-        <div className="h-48 w-48 mx-20 pr-2 pt-12">
+        <Image src={pg1} />
+        <div className="h-48 w-48 mx-20 pt-12">
           <AnimatePresence initial={false} custom={direction}>
             <motion.img 
               key={page}
