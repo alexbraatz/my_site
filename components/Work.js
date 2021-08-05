@@ -20,7 +20,7 @@ export const Work = () => {
         projects i've worked on
       </h2>
         
-        <div className="h-48 w-48 mx-20 pt-12">
+        {/* <div className="h-48 w-48 mx-20 pt-12"> */}
           <AnimatePresence initial={false} custom={direction}>
             <motion.img 
               key={page}
@@ -28,6 +28,7 @@ export const Work = () => {
               custom={direction}
               initial={{opacity: 0}}
               animate={{opacity: 1}}
+              className="ml-12 mt-6 w-2/3 bg-center"
               exit="exit"
               transition={{x: {type: 'spring', stiffness: 300, damping: 300, }, opacity: {duration: 1}}}
               drag="x"
@@ -35,15 +36,15 @@ export const Work = () => {
               dragElastic={1} 
             />
           </AnimatePresence>
-        </div>
+        {/* </div> */}
 
-        <div className="mx-8 -my-16 space-x-56">
+        {/* <div className="mx-8 my-16 space-x-56"> */}
           <motion.button
             whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
             whileTap={{scale: 0.9}}
             onClick={() => paginate(-1)}
           >
-            <FontAwesomeIcon icon={faArrowLeft} style={{width: '28px'}} className=""/>
+            <FontAwesomeIcon icon={faArrowLeft} style={{width: '28px'}} className="pt-4 mx-16"/>
           </motion.button>
    
           <motion.button
@@ -51,9 +52,9 @@ export const Work = () => {
             whileTap={{scale: 0.9}}
             onClick={() => paginate(+1)}
           >
-            <FontAwesomeIcon icon={faArrowRight} style={{width: '28px'}} className=""/>
+            <FontAwesomeIcon icon={faArrowRight} style={{width: '28px'}} className="mx-20"/>
           </motion.button>
-        </div>
+        {/* </div> */}
       
     </section>
   )
