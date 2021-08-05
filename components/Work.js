@@ -1,18 +1,13 @@
 import React, {useState} from 'react'
-// import {images} from '../images'
+import {images} from '../images'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { wrap } from '@popmotion/popcorn'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
-import {pg1} from '../public/images/pg1.png'
-import {pg2} from '../public/images/pg2.png'
-import {pg3} from '../public/images/pg3.png'
-
 export const Work = () => {
   const [[page, direction], setPage] = useState([0,0])
-  const images = [pg1, pg2, pg3]
   const imageIndex = wrap(0, images.length, page)
 
   const paginate = newDirection => {
@@ -25,7 +20,6 @@ export const Work = () => {
         projects i've worked on
       </h2>
         
-        <Image src={pg1} />
         <div className="h-48 w-48 mx-20 pt-12">
           <AnimatePresence initial={false} custom={direction}>
             <motion.img 
