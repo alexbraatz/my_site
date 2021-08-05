@@ -20,7 +20,7 @@ export const Work = () => {
         projects i've worked on
       </h2>
         
-        <div className="pl-2">
+        <div className="">
           <AnimatePresence initial={false} custom={direction}>
             <motion.img 
               key={page}
@@ -28,7 +28,7 @@ export const Work = () => {
               custom={direction}
               initial={{opacity: 0}}
               animate={{opacity: 1}}
-              className="ml-12 mt-6 w-8/12 bg-center border-4 border-white 
+              className="ml-3.5 mt-6 w-11/12 bg-center border-4 border-white 
               border-opacity-75 shadow-xl rounded"
               exit="exit"
               transition={{x: {type: 'spring', stiffness: 300, damping: 300, }, opacity: {duration: 0.5}}}

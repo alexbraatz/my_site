@@ -87,7 +87,7 @@ export const Contact = () => {
       <h6 className="pl-7 font-sans font-extrabold">you can find me in:</h6>
       <div className="px-20 md:px40 py-8 grid grid-rows-2 grid-flow-col place-content-start"> 
         
-        <div className="ml-2 shadow-2xl rounded-lg col-span-2 md:row-span-3" id='my-map' style={mapStyles}></div>
+        <div className="shadow-2xl rounded-lg col-span-2 md:row-span-3" id='my-map' style={mapStyles}></div>
 
         <div className="grid-rows-2">
           <a href="https://github.com/alexbraatz" target="_blank" rel="noopener noreferrer">
