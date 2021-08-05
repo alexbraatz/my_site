@@ -16,14 +16,14 @@ export const Work = () => {
   }
 
   return (
-    <section className="w-full h-auto bg-gradient-to-r from-pink-600 to-purple-500">
+    <section className="pt-4 w-full h-full bg-gradient-to-r from-pink-600 to-purple-500">
       <h2 className="pl-7 font-sans font-extrabold text-4xl md:text-7xl ubpixel-antialiased text-black">
         projects i've worked on
       </h2>
     
-      <div >
+      <div className="">
         
-        <div className="mx-24 w-36 h-36">
+        <div className="h-48 w-48 mx-20 pt-4">
           <AnimatePresence initial={false} custom={direction}>
             <motion.img 
               key={page}
@@ -40,25 +40,25 @@ export const Work = () => {
           </AnimatePresence>
         </div>
 
-        <div className="relative h-32 w-32">
+        <div className="ml-80">
           <motion.button
             whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
             whileTap={{scale: 0.9}}
-            className="absolute bottom-0 right-0 h-16 w-16"
-            onClick={() => paginate(1)}
+            onClick={() => paginate(+1)}
           >
-            <FontAwesomeIcon icon={faArrowRight} style={{width: '20px'}}/>
+            <FontAwesomeIcon icon={faArrowRight} style={{width: '20px'}} className=""/>
           </motion.button>
         </div>
-      
-        <motion.button
-          whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
-          whileTap={{scale: 0.9}}
-          className=""
-          onClick={() => paginate(-1)}
-        >
-          <FontAwesomeIcon icon={faArrowLeft} style={{width: '20px'}}/>
-        </motion.button>
+
+        <div className="pl-6">
+          <motion.button
+            whileHover={{scale: 1.2, transition: { duration: 0.5 }}}
+            whileTap={{scale: 0.9}}
+            onClick={() => paginate(-1)}
+          >
+            <FontAwesomeIcon icon={faArrowLeft} style={{width: '20px'}} className=""/>
+          </motion.button>
+        </div>
        
       </div>
       

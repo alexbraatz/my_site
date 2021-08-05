@@ -1,7 +1,7 @@
 export const Who = () => {
 
   return (
-    <section className="pt-8 w-full h-auto bg-gradient-to-r from-pink-600 to-purple-500">
+    <section className="pt-8 w-full h-full bg-gradient-to-r from-pink-600 to-purple-500">
       {/* <div className="relative h-32 w-32"> */}
         <div className="float-left">
           <h2 className="decoration-clone m-3 font-sans font-extrabold text-4xl ubpixel-antialiased text-black">
