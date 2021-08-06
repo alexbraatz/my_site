@@ -75,7 +75,7 @@ export const Contact = () => {
 
   return (
 
-    <section className="pt-4 w-screen h-auto bg-gradient-to-r from-pink-600 to-purple-500">
+    <section className="pt-6 w-screen h-auto bg-gradient-to-r from-pink-600 to-purple-500">
       <Head>
         <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
       </Head>
@@ -84,8 +84,8 @@ export const Contact = () => {
         contact
       </h2>
 
-      <h6 className="pl-7 font-sans font-extrabold">you can find me in:</h6>
-      <div className="px-20 md:px40 py-8 grid grid-rows-2 grid-flow-col place-content-start"> 
+      <h6 className="pl-28 mt-6 font-sans font-extrabold">you can find me in:</h6>
+      <div className="px-20 md:px40 py-2 grid grid-rows-2 grid-flow-col place-content-start"> 
         
         <div className="shadow-2xl rounded-lg col-span-2 md:row-span-3" id='my-map' style={mapStyles}></div>
 
