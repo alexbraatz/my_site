@@ -89,13 +89,13 @@ export const Contact = () => {
         
         <div className="shadow-2xl rounded-lg col-span-2 md:row-span-3" id='my-map' style={mapStyles}></div>
 
-        <div className="grid-rows-2">
+        <div className="pt-4 pl-3 grid-rows-2">
           <a href="https://github.com/alexbraatz" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} style={iconStyles}/>
           </a>
         </div>
 
-        <div className="grid-rows-2">
+        <div className="pt-3 grid-rows-2">
           {/* target attr opens a new tab and rel attr prevents a phishing type known as tabnabbing */}
           <a href="https://www.linkedin.com/in/alexjbraatz/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} style={iconStyles} />
